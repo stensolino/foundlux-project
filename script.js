@@ -1,4 +1,36 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Document link functionality
+    const showPrd = document.querySelector('.show-prd');
+    const prdModal = document.getElementById('prdModal');
+    const allCloseModals = document.querySelectorAll('.close-modal');
+    
+    // Show PRD modal
+    if (showPrd) {
+        showPrd.addEventListener('click', function(e) {
+            e.preventDefault();
+            prdModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        });
+    }
+    
+    // Close all modals when clicking on X
+    allCloseModals.forEach(closeBtn => {
+        closeBtn.addEventListener('click', function() {
+            const modal = this.closest('.modal');
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        });
+    });
+    
+    // Close any modal when clicking outside
+    window.addEventListener('click', function(event) {
+        if (event.target.classList.contains('modal')) {
+            event.target.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    });
     // Smooth scrolling for anchor links
     const scrollLinks = document.querySelectorAll('a[href^="#"]');
     scrollLinks.forEach(link => {

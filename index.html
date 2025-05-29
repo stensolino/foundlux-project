@@ -15,6 +15,11 @@
         <!-- Header Section -->
         <header class="header">
             <div class="logo">FoundLux</div>
+            <div class="header-center">
+                <div class="document-link">
+                    <a href="#" class="doc-link show-prd">View Original Product Requirements Document <i class="fas fa-file-alt"></i></a>
+                </div>
+            </div>
             <div class="header-right">
                 <div class="date">May 29, 2025</div>
             </div>
@@ -536,6 +541,132 @@
             </div>
         </footer>
     </div>
+
+    <!-- PRD Markdown Modal -->
+    <div id="prdModal" class="modal markdown-modal">
+        <div class="modal-content markdown-content">
+            <span class="close-modal">&times;</span>
+            <h1>Original Document: <br>Real Estate Crowdfunding Platform – Product Requirements Document (PRD)</h1>
+            <div class="original-doc-notice">
+                <p><i class="fas fa-info-circle"></i> This is the original PRD document in its raw format.</p>
+            </div>
+            <div class="markdown-body">
+                <h2>Problem Statement</h2>
+                <p>Access to high-quality real estate investment is limited by capital requirements and legal complexity. This platform lowers the barrier by enabling fractional ownership of luxury properties through a user-friendly digital platform.</p>
+                
+                <h2>Goal</h2>
+                <p>To launch an MVP for a real estate crowdfunding platform enabling users to invest in luxury properties through fractional ownership, using a token-based system.</p>
+                
+                <h2>Target Audience</h2>
+                <ul>
+                    <li>Primary: Investors interested in luxury real estate</li>
+                    <li>Secondary: Internal stakeholders (engineering, product, marketing)</li>
+                </ul>
+                
+                <h2>Core Features (MVP)</h2>
+                <ol>
+                    <li>
+                        <strong>User Onboarding</strong>
+                        <ul>
+                            <li>Account creation and authentication</li>
+                            <li>KYC verification process</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Property Listings</strong>
+                        <ul>
+                            <li>Display luxury properties with metadata (location, valuation, photos)</li>
+                            <li>Property detail view with token breakdown</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Token Investment Flow</strong>
+                        <ul>
+                            <li>Wallet system for deposits and balances</li>
+                            <li>Token purchase interface</li>
+                            <li>Transaction history</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Profit Distribution</strong>
+                        <ul>
+                            <li>Backend mechanism to distribute rental income</li>
+                            <li>User dashboard showing income received</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <strong>Admin Dashboard</strong>
+                        <ul>
+                            <li>Property management (add/edit)</li>
+                            <li>Rental income tracking</li>
+                        </ul>
+                    </li>
+                </ol>
+                
+                <h2>User Scenarios</h2>
+                <ul>
+                    <li>A first-time investor registers, completes KYC, and buys tokens in a listed property using their wallet balance</li>
+                    <li>An existing user receives monthly income from owned property tokens</li>
+                    <li>An admin logs into the platform to create a new property listing by entering essential metadata such as location, valuation, and photos.</li>
+                    <li>The admin manually inputs rental income data for each property, which the system uses to calculate and distribute earnings to token holders. This process ensures investors receive their share of returns based on accurate and up-to-date property performance.</li>
+                </ul>
+                
+                <h2>Success Metrics</h2>
+                <ul>
+                    <li>At least 20 registered users within the first month</li>
+                    <li>$500,000 in token investment volume within 3 months</li>
+                    <li>80% of users complete KYC within the onboarding funnel</li>
+                </ul>
+                
+                <h2>Non-Functional Requirements</h2>
+                <ul>
+                    <li>Mobile responsiveness and usability</li>
+                    <li>Load time &lt;2 seconds for main pages</li>
+                    <li>Secure handling of user data and KYC info</li>
+                </ul>
+                
+                <h2>Constraints</h2>
+                <ul>
+                    <li>No blockchain implementation in MVP</li>
+                    <li>Payment provider and flow details are not yet defined and may change</li>
+                    <li>Limited geographic availability (country-specific legal compliance)</li>
+                </ul>
+                
+                <h2>Known Risks & Assumptions</h2>
+                <ul>
+                    <li>Real payment provider integration timeline is uncertain</li>
+                    <li>MVP excludes app store deployments for mobile apps</li>
+                    <li>Rental data input will be manual initially, may delay automation</li>
+                    <li>Investor adoption depends on successful marketing and legal clarity</li>
+                </ul>
+                
+                <h2>Milestones & Estimations</h2>
+                <ul>
+                    <li><strong>Weeks 1–2</strong>: Requirements gathering, wireframes, architecture planning</li>
+                    <li><strong>Weeks 3–9</strong>: Core platform development (frontend, backend, wallet, token flows)</li>
+                    <li><strong>Weeks 10–12</strong>: Profit distribution logic, admin features, and real payment integration</li>
+                    <li><strong>Weeks 13–14</strong>: QA, staging setup, UAT</li>
+                    <li><strong>Weeks 15–16</strong>: MVP Launch (beta), internal reviews, and minor refinements</li>
+                </ul>
+                
+                <h2>Dependencies</h2>
+                <ul>
+                    <li>KYC provider integration</li>
+                    <li>Hosting and CI/CD setup on Azure</li>
+                    <li>Legal framework for investment and tokenization</li>
+                </ul>
+                
+                <h2>Next Steps</h2>
+                <ul>
+                    <li>Validate scope and timeline with stakeholders</li>
+                    <li>Break down features into epics and user stories</li>
+                    <li>Populate product backlog for sprint planning</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
 
     <script src="script.js"></script>
 </body>
