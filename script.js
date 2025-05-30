@@ -51,10 +51,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const ctaPrimary = document.querySelector('.cta-primary');
     if (ctaPrimary) {
         ctaPrimary.addEventListener('click', function() {
-            // Scroll to timeline section
-            const timelineSection = document.querySelector('.timeline-section');
-            if (timelineSection) {
-                timelineSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // Scroll to the development effort section which contains the timeline
+            const effortSection = document.querySelector('.effort-section');
+            if (effortSection) {
+                effortSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         });
     }
