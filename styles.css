@@ -583,6 +583,49 @@ ul li:before {
     margin-bottom: 80px;
 }
 
+/* Timeline Tabs */
+.timeline-tabs {
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tab-btn {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.tab-btn.active {
+    background: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    color: white;
+    box-shadow: 0 4px 10px rgba(106, 76, 147, 0.2);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
 .effort-summary {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

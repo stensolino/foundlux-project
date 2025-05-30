@@ -316,7 +316,14 @@
         <!-- Development Effort Section -->
         <section class="effort-section">
             <h2 class="section-title">Development Effort</h2>
-            <div class="timeline">
+            <div class="timeline-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="combined">Combined Timeline</button>
+                    <button class="tab-btn" data-tab="web">Web-only Timeline</button>
+                    <button class="tab-btn" data-tab="mobile">Mobile-only Timeline</button>
+                </div>
+            </div>
+            <div class="timeline tab-content active" id="combined-timeline">
                 <div class="timeline-item">
                     <div class="timeline-point"></div>
                     <div class="timeline-content">
@@ -383,6 +390,143 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Web-only Timeline -->
+            <div class="timeline tab-content" id="web-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 1-2</h3>
+                        <p>Web platform initialization and planning</p>
+                        <ul class="timeline-details">
+                            <li>Set up web development environment (1 day)</li>
+                            <li>Initialize web application structure (2 days)</li>
+                            <li>Define web architecture and data models (3 days)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 2-5</h3>
+                        <p>Core web platform development</p>
+                        <ul class="timeline-details">
+                            <li>Web authentication and user profiles (3 days)</li>
+                            <li>Web KYC verification interface (4 days)</li>
+                            <li>Property listing UI for web (5 days)</li>
+                            <li>Web wallet implementation (7 days)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 6-9</h3>
+                        <p>Web-specific features and admin tools</p>
+                        <ul class="timeline-details">
+                            <li>Web token purchasing interface (3 days)</li>
+                            <li>Admin dashboard for web platform (5 days)</li>
+                            <li>Web-based income visualization (3 days)</li>
+                            <li>Backend API integration for web (6 days)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 9-10</h3>
+                        <p>Web platform QA and preparation</p>
+                        <ul class="timeline-details">
+                            <li>Web platform testing (2.5 days)</li>
+                            <li>Web bug fixes and refinements (2 days)</li>
+                            <li>Web performance optimization (2 days)</li>
+                            <li>Web deployment preparation (2 days)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 11-12</h3>
+                        <p>Web platform launch and stabilization</p>
+                        <ul class="timeline-details">
+                            <li>Web platform deployment (2 days)</li>
+                            <li>Browser compatibility testing (1 day)</li>
+                            <li>Web analytics implementation (1.5 days)</li>
+                            <li>Web feedback mechanism (1.5 days)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile-only Timeline -->
+            <div class="timeline tab-content" id="mobile-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 1</h3>
+                        <p>Mobile application planning and setup</p>
+                        <ul class="timeline-details">
+                            <li>Set up mobile development environment (1 day)</li>
+                            <li>Initialize mobile app structure (2 days)</li>
+                            <li>Mobile app architecture design (2 days)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 2-4</h3>
+                        <p>Core mobile UI development</p>
+                        <ul class="timeline-details">
+                            <li>Mobile authentication screens (2 days)</li>
+                            <li>Mobile KYC verification flow (3 days)</li>
+                            <li>Property browsing for mobile (4 days)</li>
+                            <li>Mobile-optimized property details (3 days)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 4-6</h3>
+                        <p>Mobile transaction and wallet features</p>
+                        <ul class="timeline-details">
+                            <li>Mobile wallet UI (3 days)</li>
+                            <li>Mobile token purchase flow (4 days)</li>
+                            <li>Transaction history for mobile (2 days)</li>
+                            <li>Push notification system (3 days)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 6-7</h3>
+                        <p>Mobile testing and refinement</p>
+                        <ul class="timeline-details">
+                            <li>Mobile app testing (2.5 days)</li>
+                            <li>Mobile-specific bug fixes (2 days)</li>
+                            <li>Mobile performance optimization (2 days)</li>
+                            <li>Device compatibility testing (1.5 days)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 8-9</h3>
+                        <p>Mobile beta release</p>
+                        <ul class="timeline-details">
+                            <li>Beta testing distribution (1 day)</li>
+                            <li>User feedback collection (1.5 days)</li>
+                            <li>Final mobile refinements (2 days)</li>
+                            <li>Mobile beta launch (1 day)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
             <div class="effort-summary">
                 <div class="effort-card">
                     <h3>Web Total</h3>

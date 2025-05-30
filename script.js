@@ -115,4 +115,29 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Check on scroll
     window.addEventListener('scroll', animateOnScroll);
+    
+    // Timeline tabs functionality
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            tabBtns.forEach(b => b.classList.remove('active'));
+            
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            // Get the tab to show
+            const tabToShow = this.getAttribute('data-tab');
+            
+            // Hide all tab contents
+            tabContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show the selected tab content
+            document.getElementById(tabToShow + '-timeline').classList.add('active');
+        });
+    });
 });
