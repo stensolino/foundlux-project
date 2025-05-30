@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="presentation-container">
@@ -63,98 +63,109 @@
         <!-- Core Features Section -->
         <section class="core-features">
             <h2 class="section-title">Core Features (MVP)</h2>
-            <div class="features-grid">
-                <div class="feature-card">
+            <div class="features-list-container">
+                <div class="feature-list-item">
                     <div class="feature-icon">
-                        <i class="fas fa-user-plus"></i>
+                        <i class="fas fa-user-shield"></i>
                     </div>
-                    <h3>User Onboarding</h3>
-                    <ul>
-                        <li>Account creation and authentication</li>
-                        <li>KYC verification process</li>
-                    </ul>
+                    <div class="feature-content">
+                        <h3>1. User Onboarding</h3>
+                        <ul>
+                            <li>Account creation and authentication</li>
+                            <li>KYC verification process</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
+                <div class="feature-list-item">
                     <div class="feature-icon">
-                        <i class="fas fa-home"></i>
+                        <i class="fas fa-building"></i>
                     </div>
-                    <h3>Property Listings</h3>
-                    <ul>
-                        <li>Display luxury properties with metadata</li>
-                        <li>Property detail view with token breakdown</li>
-                    </ul>
+                    <div class="feature-content">
+                        <h3>2. Property Listings</h3>
+                        <ul>
+                            <li>Display luxury properties with metadata (location, valuation, photos)</li>
+                            <li>Property detail view with token breakdown</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
+                <div class="feature-list-item">
                     <div class="feature-icon">
-                        <i class="fas fa-coins"></i>
+                        <i class="fas fa-hand-holding-usd"></i>
                     </div>
-                    <h3>Token Investment Flow</h3>
-                    <ul>
-                        <li>Wallet system for deposits and balances</li>
-                        <li>Token purchase interface</li>
-                        <li>Transaction history</li>
-                    </ul>
+                    <div class="feature-content">
+                        <h3>3. Token Investment Flow</h3>
+                        <ul>
+                            <li>Wallet system for deposits and balances</li>
+                            <li>Token purchase interface</li>
+                            <li>Transaction history</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
+                <div class="feature-list-item">
                     <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-money-bill-wave"></i>
                     </div>
-                    <h3>Profit Distribution</h3>
-                    <ul>
-                        <li>Mechanism to distribute rental income</li>
-                        <li>User dashboard showing income received</li>
-                    </ul>
+                    <div class="feature-content">
+                        <h3>4. Profit Distribution</h3>
+                        <ul>
+                            <li>Backend mechanism to distribute rental income</li>
+                            <li>User dashboard showing income received</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="feature-card">
+                <div class="feature-list-item">
                     <div class="feature-icon">
-                        <i class="fas fa-tachometer-alt"></i>
+                        <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Admin Dashboard</h3>
-                    <ul>
-                        <li>Property management (add/edit)</li>
-                        <li>Rental income tracking</li>
-                    </ul>
+                    <div class="feature-content">
+                        <h3>5. Admin Dashboard</h3>
+                        <ul>
+                            <li>Property management (add/edit)</li>
+                            <li>Rental income tracking</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Timeline Section -->
-        <section class="timeline-section">
-            <h2 class="section-title">Development Timeline</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-point"></div>
-                    <div class="timeline-content">
-                        <h3>Weeks 1-2</h3>
-                        <p>Requirements gathering, wireframes, architecture planning</p>
+        <!-- User Scenarios Section -->
+        <section class="scenarios-section">
+            <h2 class="section-title">User Scenarios</h2>
+            <div class="scenarios-container">
+                <div class="scenario-card">
+                    <div class="scenario-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="scenario-content">
+                        <h3>First-time Investor</h3>
+                        <p>A first-time investor registers, completes KYC verification, and buys tokens in a listed property using their wallet balance.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-point"></div>
-                    <div class="timeline-content">
-                        <h3>Weeks 3-9</h3>
-                        <p>Core platform development (frontend, backend, wallet, token flows)</p>
+                <div class="scenario-card">
+                    <div class="scenario-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <div class="scenario-content">
+                        <h3>Return Recipient</h3>
+                        <p>An existing user receives monthly income from owned property tokens, tracking their investment performance.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-point"></div>
-                    <div class="timeline-content">
-                        <h3>Weeks 10-12</h3>
-                        <p>Profit distribution logic, admin features, and real payment integration</p>
+                <div class="scenario-card">
+                    <div class="scenario-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <div class="scenario-content">
+                        <h3>Property Management</h3>
+                        <p>An admin creates new property listings by entering essential metadata such as location, valuation, and photos.</p>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-point"></div>
-                    <div class="timeline-content">
-                        <h3>Weeks 13-14</h3>
-                        <p>QA, staging setup, UAT</p>
+                <div class="scenario-card">
+                    <div class="scenario-icon">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-point"></div>
-                    <div class="timeline-content">
-                        <h3>Weeks 15-16</h3>
-                        <p>MVP Launch (beta), internal reviews, and minor refinements</p>
+                    <div class="scenario-content">
+                        <h3>Income Distribution</h3>
+                        <p>The admin inputs rental income data, which the system uses to calculate and distribute earnings to token holders based on accurate property performance.</p>
                     </div>
                 </div>
             </div>
@@ -191,9 +202,187 @@
             </div>
         </section>
 
+        <!-- Non-Functional Requirements Section -->
+        <section class="requirements-section">
+            <h2 class="section-title">Non-Functional Requirements</h2>
+            <div class="requirements-container">
+                <div class="requirement-card">
+                    <div class="requirement-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="requirement-content">
+                        <h3>Mobile Responsiveness</h3>
+                        <p>Full mobile responsiveness and optimized usability across all device types and screen sizes.</p>
+                    </div>
+                </div>
+                <div class="requirement-card">
+                    <div class="requirement-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="requirement-content">
+                        <h3>Performance</h3>
+                        <p>Load time under 2 seconds for main pages to ensure optimal user experience.</p>
+                    </div>
+                </div>
+                <div class="requirement-card">
+                    <div class="requirement-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="requirement-content">
+                        <h3>Security</h3>
+                        <p>Secure handling of user data and KYC information with industry-standard encryption and privacy controls.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Constraints Section -->
+        <section class="constraints-section">
+            <h2 class="section-title">Constraints</h2>
+            <div class="constraints-container">
+                <div class="constraint-card">
+                    <div class="constraint-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <div class="constraint-content">
+                        <h3>No Blockchain</h3>
+                        <p>No blockchain implementation in MVP, focusing instead on traditional database architecture.</p>
+                    </div>
+                </div>
+                <div class="constraint-card">
+                    <div class="constraint-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <div class="constraint-content">
+                        <h3>Payment Provider</h3>
+                        <p>Payment provider and flow details are not yet defined and may change during development.</p>
+                    </div>
+                </div>
+                <div class="constraint-card">
+                    <div class="constraint-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="constraint-content">
+                        <h3>Limited Geography</h3>
+                        <p>Limited geographic availability due to country-specific legal compliance requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Risks & Assumptions Section -->
+        <section class="risks-section">
+            <h2 class="section-title">Known Risks & Assumptions</h2>
+            <div class="risks-list-container">
+                <div class="risk-list-item">
+                    <div class="risk-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="risk-content">
+                        <h3>1. Payment Integration</h3>
+                        <p>Real payment provider integration timeline is uncertain and may affect launch schedule.</p>
+                    </div>
+                </div>
+                <div class="risk-list-item">
+                    <div class="risk-icon">
+                        <i class="fas fa-mobile"></i>
+                    </div>
+                    <div class="risk-content">
+                        <h3>2. Mobile Deployment</h3>
+                        <p>MVP excludes app store deployments for mobile apps, focusing on web-first approach.</p>
+                    </div>
+                </div>
+                <div class="risk-list-item">
+                    <div class="risk-icon">
+                        <i class="fas fa-keyboard"></i>
+                    </div>
+                    <div class="risk-content">
+                        <h3>3. Manual Processes</h3>
+                        <p>Rental data input will be manual initially, which may delay automation of income distribution.</p>
+                    </div>
+                </div>
+                <div class="risk-list-item">
+                    <div class="risk-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="risk-content">
+                        <h3>4. Adoption Challenges</h3>
+                        <p>Investor adoption depends on successful marketing strategies and legal clarity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Development Effort Section -->
         <section class="effort-section">
             <h2 class="section-title">Development Effort</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 1-2</h3>
+                        <p>Requirements gathering, wireframes, architecture planning</p>
+                        <ul class="timeline-details">
+                            <li>Set up development environment (2 days)</li>
+                            <li>Initialize applications for web, mobile, backend (4 days)</li>
+                            <li>Define system architecture and data models (5 days)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 3-9</h3>
+                        <p>Core platform development (frontend, backend, wallet, token flows)</p>
+                        <ul class="timeline-details">
+                            <li>User authentication and basic profiles (6 days)</li>
+                            <li>KYC verification flows (8 days)</li>
+                            <li>Property listing UI and backend (12 days)</li>
+                            <li>Wallet system implementation (15 days)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 10-12</h3>
+                        <p>Profit distribution logic, admin features, and real payment integration</p>
+                        <ul class="timeline-details">
+                            <li>Token purchasing interface (6 days)</li>
+                            <li>Admin dashboard for property management (5 days)</li>
+                            <li>Rental income tracking (7 days)</li>
+                            <li>Income distribution automation (5 days)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 13-14</h3>
+                        <p>QA, staging setup, UAT</p>
+                        <ul class="timeline-details">
+                            <li>Manual feature testing (5 days)</li>
+                            <li>Bug fixing and regression testing (4 days)</li>
+                            <li>UAT preparation (2.5 days)</li>
+                            <li>Azure hosting configuration (2 days)</li>
+                            <li>CI/CD pipeline setup (1.5 days)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-point"></div>
+                    <div class="timeline-content">
+                        <h3>Weeks 15-16</h3>
+                        <p>MVP Launch (beta), internal reviews, and minor refinements</p>
+                        <ul class="timeline-details">
+                            <li>Final deployment preparation (3 days)</li>
+                            <li>Internal stakeholder review (2 days)</li>
+                            <li>Monitoring setup and performance optimization (3 days)</li>
+                            <li>User feedback collection mechanism (2 days)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="effort-summary">
                 <div class="effort-card">
                     <h3>Web Total</h3>
@@ -211,7 +400,83 @@
             <div class="effort-detail">
                 <button class="view-details-btn">View Detailed Breakdown</button>
             </div>
+            <div class="effort-assumptions">
+                <h3>Key Assumptions</h3>
+                <ul>
+                    <li><i class="fas fa-info-circle"></i> Estimates focus on functional implementation and do not include detailed UI polishing or design iterations beyond basic usability.</li>
+                    <li><i class="fas fa-info-circle"></i> The "Automate income distribution per token ownership" task assumes a basic scheduled logic, but the exact business rules and frequency for income distribution are not yet defined and may significantly affect complexity and implementation effort.</li>
+                    <li><i class="fas fa-info-circle"></i> The "Integrate payment provider (real)" task assumes the integration of a standard third-party gateway, but the specific provider is not yet confirmed and could impact final estimates.</li>
+                    <li><i class="fas fa-info-circle"></i> Estimations do not include deployment to app stores (iOS/Android), which may require additional time and coordination.</li>
+                </ul>
+            </div>
         </section>
+
+        <!-- Dependencies Section -->
+        <section class="dependencies-section">
+            <h2 class="section-title">Dependencies</h2>
+            <div class="dependencies-container">
+                <div class="dependency-card">
+                    <div class="dependency-icon">
+                        <i class="fas fa-id-card"></i>
+                    </div>
+                    <div class="dependency-content">
+                        <h3>KYC Provider Integration</h3>
+                        <p>Third-party Know Your Customer provider integration for identity verification compliance.</p>
+                    </div>
+                </div>
+                <div class="dependency-card">
+                    <div class="dependency-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="dependency-content">
+                        <h3>Cloud Infrastructure</h3>
+                        <p>Hosting and CI/CD setup on Azure for reliable and scalable deployment pipeline.</p>
+                    </div>
+                </div>
+                <div class="dependency-card">
+                    <div class="dependency-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <div class="dependency-content">
+                        <h3>Legal Framework</h3>
+                        <p>Legal framework for investment and tokenization that complies with regulatory requirements.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Next Steps Section -->
+        <section class="next-steps">
+            <h2 class="section-title">Next Steps</h2>
+            <div class="steps-container">
+                <div class="step-item">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Validate scope and timeline with stakeholders</h3>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Break down features into epics and user stories</h3>
+                    </div>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Populate product backlog for sprint planning</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>© 2025 FoundLux - Real Estate Crowdfunding Platform</p>
+                <p>For Stakeholder Presentation Only</p>
+            </div>
+        </footer>
         
         <!-- Modal for Feature Breakdown -->
         <div id="featureBreakdownModal" class="modal">
@@ -502,6 +767,7 @@
                 <div class="modal-footer">
                     <h3>Assumptions</h3>
                     <ul>
+                        <li>Estimates focus on functional implementation and do not include detailed UI polishing or design iterations beyond basic usability.</li>
                         <li>The "Automate income distribution per token ownership" task assumes a basic scheduled logic, but the exact business rules and frequency for income distribution are not yet defined and may significantly affect complexity and implementation effort.</li>
                         <li>The "Integrate payment provider (real)" task assumes the integration of a standard third-party gateway, but the specific provider is not yet confirmed and could impact final estimates.</li>
                         <li>Estimations do not include deployment to app stores (iOS/Android), which may require additional time and coordination.</li>
@@ -509,49 +775,13 @@
                 </div>
             </div>
         </div>
-
-        <!-- Next Steps Section -->
-        <section class="next-steps">
-            <h2 class="section-title">Next Steps</h2>
-            <div class="steps-container">
-                <div class="step-item">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Validate scope and timeline with stakeholders</h3>
-                    </div>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Break down features into epics and user stories</h3>
-                    </div>
-                </div>
-                <div class="step-item">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Populate product backlog for sprint planning</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer Section -->
-        <footer class="footer">
-            <div class="footer-content">
-                <p>© 2025 FoundLux - Real Estate Crowdfunding Platform</p>
-                <p>For Stakeholder Presentation Only</p>
-            </div>
-        </footer>
     </div>
 
     <!-- PRD Markdown Modal -->
     <div id="prdModal" class="modal markdown-modal">
         <div class="modal-content markdown-content">
             <span class="close-modal">&times;</span>
-            <h1>Original Document: <br>Real Estate Crowdfunding Platform – Product Requirements Document (PRD)</h1>
-            <div class="original-doc-notice">
-                <p><i class="fas fa-info-circle"></i> This is the original PRD document in its raw format.</p>
-            </div>
+            <h1>Real Estate Crowdfunding Platform – Product Requirements Document (PRD)</h1>
             <div class="markdown-body">
                 <h2>Problem Statement</h2>
                 <p>Access to high-quality real estate investment is limited by capital requirements and legal complexity. This platform lowers the barrier by enabling fractional ownership of luxury properties through a user-friendly digital platform.</p>
@@ -667,8 +897,6 @@
             </div>
         </div>
     </div>
-
-
 
     <script src="script.js"></script>
 </body>
